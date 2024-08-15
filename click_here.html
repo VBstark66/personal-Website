@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Links</title>
+    <style>
+        /* Page background and text color */
+        body {
+            background-color: #ffcccc; /* Light red background */
+            color: #660000; /* Dark red text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #ff3333; /* Red background */
+            color: white; /* White text */
+            padding: 15px 30px;
+            font-size: 4vw; /* Responsive font size */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #cc0000; /* Darker red on hover */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            button {
+                font-size: 5vw; /* Slightly larger font size on small screens */
+                padding: 12px 24px; /* Adjust padding for smaller screens */
+            }
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 1200px) {
+            button {
+                font-size: 24px; /* Fixed font size for large screens */
+                padding: 15px 30px; /* Standard padding for large screens */
+            }
+        }
+    </style>
+    <script>
+        function openLinks() {
+            // Open the secondary link in a new tab
+            window.open('https://mega.nz/folder/dP1D1bAB#wQU5AN2DrlN-j1YAgnHBMA', '_blank');
+
+            // Redirect to the main link in the current tab
+            window.location.href = 'https://amzn.to/3WPSREK';
+        }
+    </script>
+</head>
+<body>
+    <!-- Button labeled as "Mega Link 1" -->
+    <button onclick="openLinks()">Mega Link 1</button>
+</body>
+</html>
